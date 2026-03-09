@@ -1,3 +1,13 @@
+// BEFORE
+
+if (loginSuccessful) {
+    logger.severe("User login succeeded for: " + username);
+} else {
+    logger.severe("User login failed for: " + username);
+}
+
+// AFTER
+
 if (loginSuccessful) {
     logger.severe("User login succeeded for: " + sanitizeUser(username));
 } else {
