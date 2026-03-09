@@ -1,3 +1,11 @@
+// BEFORE
+
+public class Widget {
+    public int total;
+}
+
+// AFTER
+
 public class Widget {
   private int total; // Declared private
 
